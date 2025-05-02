@@ -2,56 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AlSearch - Powered by Google</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Horizon Search - Powered by Google</title>
 
-  <!-- Google Programmable Search -->
+  <!-- Google Programmable Search Engine Embed -->
   <script async src="https://cse.google.com/cse.js?cx=1493f3ef92dde4755"></script>
 
   <style>
     body {
       font-family: Arial, sans-serif;
+      background: #f4f4f4;
       padding: 20px;
-      background: #f9f9f9;
     }
+
     h2 {
       text-align: center;
       color: #333;
     }
-    .gcse-searchbox, .gcse-searchresults {
-      margin: 20px auto;
+
+    .gcse-search {
       max-width: 800px;
+      margin: 30px auto;
     }
   </style>
 </head>
 <body>
-  <h2>Search the Web</h2>
-  <div class="gcse-searchbox"></div>
-  <div class="gcse-searchresults"></div>
-
-  <!-- Firebase SDKs -->
-  <script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyAUYJ6Kv5UWNrDkktHNYSyNpJPsZbKhqsc",
-    authDomain: "horizon-5da8e.firebaseapp.com",
-    projectId: "horizon-5da8e",
-    storageBucket: "horizon-5da8e.firebasestorage.app",
-    messagingSenderId: "670328773130",
-    appId: "1:670328773130:web:9a74cfc0900b23a7985df3",
-    measurementId: "G-BVETW56F5H"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-</script>
+  <h2>Search the Web with Horizon</h2>
+  <div class="gcse-search"></div>
 </body>
 </html>
